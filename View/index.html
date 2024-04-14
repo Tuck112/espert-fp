@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/style.css">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title></title> 
+    </head>
+    <body class="font-[Poppins] bg-gradient-to-t from-[] to-[] h-screen">
+
+<!-- Header Star -->
+<header class="bg-white h-[80px] shadow-md " >
+        <nav class="flex justify-between items-center w-[92%] mx-5">
+          <li class="flex flex-row justify-center w-[142px] h-[28px] box-sizing-border">
+            <div class=" bg-[url('../assets/images/logoEdspert1.png')] bg-[50%_50%] bg-cover bg-no-repeat w-[142px] h-[28px] mt-2"></div> 
+            </li>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] ml-12 top-[-100%] md:w-auto w-full flex items-center px-5 mt-3">
+                <ul class="flex md:flex-row flex-col md:items-center  md:gap-[4vw] gap-8 ">
+                    <li>
+                        <a class="hover:text-gray-500 " href="../View/index.html">Home</a>
+                    </li>
+                    <li>
+                    <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Product</a>
+            <div class="dropdown-menu bg-light m-0">
+              <a href="#Fasilitas" class="dropdown-item">Fasilitas</a>
+              <a href="#Mentor" class="dropdown-item">Mentor</a>
+              <a href="#" class="dropdown-item">-</a>
+              <a href="#" class="dropdown-item">-</a>
+                    </li>
+                    <li>
+                    <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resource</a>
+            <div class="dropdown-menu bg-light m-0">
+              <a href="#Materi" class="dropdown-item">Materi</a>
+              <a href="#" class="dropdown-item">-</a>
+              <a href="#" class="dropdown-item">-</a>
+              <a href="#" class="dropdown-item">-</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500 " href="../dist/index.html">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            
+            <div class="flex items-center gap-6  mt-4 ">
+                <button class="bg-[#ffff] text-black px-5 py-2 rounded-full hover:bg-[#87acec]">Login</button>
+                <button class="bg-[#7F56D9] text-[#ffff] px-5 py-2 rounded-full hover:bg-[#87acec] text-[#ffff]">Signin</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+<!-- Header End  -->
+
+
+<!-- main menu -->
+
+<!-- upper menu -->
+  <div class=" mt-20 p-3  grid grid-cols-2 gap-3 bg-[var(--gray-50,#F9FAFB)] md:grid-cols-4 px-5">
+
+   <div class="h-15     col-span-2 md:row-span-3 "><img src="../assets/images/image.jpeg" alt="" class="w-[300px] h-[300px] md: w-[560px] h-[560px]"></div> 
+
+   <div class="h-15     col-span-2 md:text-left">
+  <ul >
+  <li class="m-[0_0_12px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--brand-700,#6941C6)] md: text-[13px]">Intensive Bootcamp</li>
+  <li class="break-words font-['Inter'] font-[var(--display-lg-semibold-font-weight,600)] text-[24px] tracking-[var(--display-lg-semibold-letter-spacing,-1px)] leading-[var(--display-lg-semibold-line-height,1.25)] text-[var(--gray-900,#101828)] md: text-[38px]">Web Development Bootcamp</li>
+  </ul>
+   </div>
+
+   <div class="h-15    ">
+    <ul class="ml-12">
+      <li class="m-[0_0_12px_0] inline-block break-words font-['Inter'] font-[var(--display-xl-semibold-font-weight,600)] text-[30px] tracking-[var(--display-xl-semibold-letter-spacing,-1.2px)] leading-[var(--display-xl-semibold-line-height,1.2)] text-[var(--brand-600,#7F56D9)] md:text-[60px]">400+</li>
+      <li class="self-start break-words font-['Inter'] font-[var(--text-lg-medium-font-weight,500)] text-[13px] leading-[var(--text-lg-medium-line-height,1.556)] text-[var(--gray-900,#101828)] md:text-[18px]">Portfolio Siswa</li>
+    </ul>
+   </div>
+
+   <div class="h-15    ">
+    <ul class="ml-12" >
+      <li class="m-[0_0_12px_0] inline-block break-words font-['Inter'] font-[var(--display-xl-semibold-font-weight,600)] text-[30px] tracking-[var(--display-xl-semibold-letter-spacing,-1.2px)] leading-[var(--display-xl-semibold-line-height,1.2)] text-[var(--brand-600,#7F56D9)] md:text-[60px]">80%</li>
+      <li class="self-start break-words font-['Inter'] font-[var(--text-lg-medium-font-weight,500)] text-[13px] leading-[var(--text-lg-medium-line-height,1.556)] text-[var(--gray-900,#101828)] md:text-[18px]">Alumni diterima kerja</li>
+    </ul>
+   </div>
+
+   <div class="h-15    ">
+    <ul class="ml-12">
+      <li class="m-[0_0_12px_0] inline-block break-words font-['Inter'] font-[var(--display-xl-semibold-font-weight,600)] text-[30px] tracking-[var(--display-xl-semibold-letter-spacing,-1.2px)] leading-[var(--display-xl-semibold-line-height,1.2)] text-[var(--brand-600,#7F56D9)] md:text-[60px]">10k</li>
+      <li class="self-start break-words font-['Inter'] font-[var(--text-lg-medium-font-weight,500)] text-[13px] leading-[var(--text-lg-medium-line-height,1.556)] text-[var(--gray-900,#101828)] md:text-[18px]">Anggota Komunitas</li>
+    </ul>
+   </div>
+
+   <div class="h-15    ">
+    <ul class="ml-12" >
+      <li class="m-[0_0_12px_0] inline-block break-words font-['Inter'] font-[var(--display-xl-semibold-font-weight,600)] text-[30px] tracking-[var(--display-xl-semibold-letter-spacing,-1.2px)] leading-[var(--display-xl-semibold-line-height,1.2)] text-[var(--brand-600,#7F56D9)] md:text-[60px]">2000+</li>
+      <li class="self-start break-words font-['Inter'] font-[var(--text-lg-medium-font-weight,500)] text-[13px] leading-[var(--text-lg-medium-line-height,1.556)] text-[var(--gray-900,#101828)] md:text-[18px]">Testimoni</li>
+    </ul>
+   </div>
+
+  </div>
+<!-- upper menu end -->
+
+
+
+<!-- mentor menu -->
+<section id="Mentor">
+<div class=" mt-20 p-3  grid grid-cols-2 gap-3 md:grid-cols-4 px-5">
+
+<div class="h-15    col-span-2 md:col-span-4" >
+  <ul class="text-center ">
+    <li class="break-words font-['Inter'] font-[var(--display-md-semibold-font-weight,600)] text-[30px] tracking-[var(--display-md-semibold-letter-spacing,-0.7px)] leading-[var(--display-md-semibold-line-height,1.222)] text-[var(--gray-900,#101828)]">Mentor</li>
+    <li class="break-words font-['Inter'] font-[var(--text-xl-regular-font-weight,400)] text-[13px] leading-[var(--text-xl-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Dipandu oleh Mentor Terbaik Kami</li>
+  </ul>
+</div>
+<div class="h-15   bg-[#F9FAFB] aspect-square">
+  <ul class="text-center ">
+    <li><img src="../assets/images/ava.jpeg" alt="" class="w-[100px] h-[100px] mx-auto rounded-[100%] mt-4"></li>
+    <li class="break-words font-['Inter'] font-[var(--text-lg-semibold-font-weight,600)] text-[13px] leading-[var(--text-lg-semibold-line-height,1.556)] text-[var(--gray-900,#101828)]">Rudi Susanto</li>
+    <li class="m-[0_6.4px_0_6.4px] break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--brand-700,#6941C6)]">Founder &amp; CEO</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Former co-founder of Opendoor.<br> Early staff at Spotify and Clearbit.</li>
+    <li class="mt-3 mx-auto flex justify-center items-center ">
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector78_x2.svg" />
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector77_x2.svg" />
+      <img class="w-[20px] h-[16.3px] " src="../assets/vectors/vector95_x2.svg" />
+    </li>
+  </ul>
+</div>
+
+<div class="h-15   bg-[#F9FAFB] aspect-square">
+  <ul class="text-center ">
+    <li><img src="../assets/images/ava.jpeg" alt="" class="w-[100px] h-[100px] mx-auto rounded-[100%] mt-4"></li>
+    <li class="break-words font-['Inter'] font-[var(--text-lg-semibold-font-weight,600)] text-[13px] leading-[var(--text-lg-semibold-line-height,1.556)] text-[var(--gray-900,#101828)]">Rudi Susanto</li>
+    <li class="m-[0_6.4px_0_6.4px] break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--brand-700,#6941C6)]">Founder &amp; CEO</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Former co-founder of Opendoor.<br> Early staff at Spotify and Clearbit.</li>
+    <li class="mt-3 mx-auto flex justify-center items-center ">
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector78_x2.svg" />
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector77_x2.svg" />
+      <img class="w-[20px] h-[16.3px] " src="../assets/vectors/vector95_x2.svg" />
+    </li>
+  </ul>
+</div>
+
+<div class="h-15   bg-[#F9FAFB] aspect-square">
+  <ul class="text-center ">
+    <li><img src="../assets/images/ava.jpeg" alt="" class="w-[100px] h-[100px] mx-auto rounded-[100%] mt-4"></li>
+    <li class="break-words font-['Inter'] font-[var(--text-lg-semibold-font-weight,600)] text-[13px] leading-[var(--text-lg-semibold-line-height,1.556)] text-[var(--gray-900,#101828)]">Rudi Susanto</li>
+    <li class="m-[0_6.4px_0_6.4px] break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--brand-700,#6941C6)]">Founder &amp; CEO</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Former co-founder of Opendoor.<br> Early staff at Spotify and Clearbit.</li>
+    <li class="mt-3 mx-auto flex justify-center items-center ">
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector78_x2.svg" />
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector77_x2.svg" />
+      <img class="w-[20px] h-[16.3px] " src="../assets/vectors/vector95_x2.svg" />
+    </li>
+  </ul>
+</div>
+
+<div class="h-15   bg-[#F9FAFB] aspect-square">
+  <ul class="text-center ">
+    <li><img src="../assets/images/ava.jpeg" alt="" class="w-[100px] h-[100px] mx-auto rounded-[100%] mt-4"></li>
+    <li class="break-words font-['Inter'] font-[var(--text-lg-semibold-font-weight,600)] text-[13px] leading-[var(--text-lg-semibold-line-height,1.556)] text-[var(--gray-900,#101828)]">Rudi Susanto</li>
+    <li class="m-[0_6.4px_0_6.4px] break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--brand-700,#6941C6)]">Founder &amp; CEO</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Former co-founder of Opendoor.<br> Early staff at Spotify and Clearbit.</li>
+    <li class="mt-3 mx-auto flex justify-center items-center ">
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector78_x2.svg" />
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector77_x2.svg" />
+      <img class="w-[20px] h-[16.3px] " src="../assets/vectors/vector95_x2.svg" />
+    </li>
+  </ul>
+</div>
+
+<div class="h-15   bg-[#F9FAFB] aspect-square">
+  <ul class="text-center ">
+    <li><img src="../assets/images/ava.jpeg" alt="" class="w-[100px] h-[100px] mx-auto rounded-[100%] mt-4"></li>
+    <li class="break-words font-['Inter'] font-[var(--text-lg-semibold-font-weight,600)] text-[13px] leading-[var(--text-lg-semibold-line-height,1.556)] text-[var(--gray-900,#101828)]">Rudi Susanto</li>
+    <li class="m-[0_6.4px_0_6.4px] break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--brand-700,#6941C6)]">Founder &amp; CEO</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Former co-founder of Opendoor.<br> Early staff at Spotify and Clearbit.</li>
+    <li class="mt-3 mx-auto flex justify-center items-center ">
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector78_x2.svg" />
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector77_x2.svg" />
+      <img class="w-[20px] h-[16.3px] " src="../assets/vectors/vector95_x2.svg" />
+    </li>
+  </ul>
+</div>
+
+<div class="h-15   bg-[#F9FAFB] aspect-square">
+  <ul class="text-center ">
+    <li><img src="../assets/images/ava.jpeg" alt="" class="w-[100px] h-[100px] mx-auto rounded-[100%] mt-4"></li>
+    <li class="break-words font-['Inter'] font-[var(--text-lg-semibold-font-weight,600)] text-[13px] leading-[var(--text-lg-semibold-line-height,1.556)] text-[var(--gray-900,#101828)]">Rudi Susanto</li>
+    <li class="m-[0_6.4px_0_6.4px] break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--brand-700,#6941C6)]">Founder &amp; CEO</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Former co-founder of Opendoor.<br> Early staff at Spotify and Clearbit.</li>
+    <li class="mt-3 mx-auto flex justify-center items-center ">
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector78_x2.svg" />
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector77_x2.svg" />
+      <img class="w-[20px] h-[16.3px] " src="../assets/vectors/vector95_x2.svg" />
+    </li>
+  </ul>
+</div>
+
+<div class="h-15   bg-[#F9FAFB] aspect-square">
+  <ul class="text-center ">
+    <li><img src="../assets/images/ava.jpeg" alt="" class="w-[100px] h-[100px] mx-auto rounded-[100%] mt-4"></li>
+    <li class="break-words font-['Inter'] font-[var(--text-lg-semibold-font-weight,600)] text-[13px] leading-[var(--text-lg-semibold-line-height,1.556)] text-[var(--gray-900,#101828)]">Rudi Susanto</li>
+    <li class="m-[0_6.4px_0_6.4px] break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--brand-700,#6941C6)]">Founder &amp; CEO</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Former co-founder of Opendoor.<br> Early staff at Spotify and Clearbit.</li>
+    <li class="mt-3 mx-auto flex justify-center items-center ">
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector78_x2.svg" />
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector77_x2.svg" />
+      <img class="w-[20px] h-[16.3px] " src="../assets/vectors/vector95_x2.svg" />
+    </li>
+  </ul>
+</div>
+
+<div class="h-15   bg-[#F9FAFB] aspect-square">
+  <ul class="text-center ">
+    <li><img src="../assets/images/ava.jpeg" alt="" class="w-[100px] h-[100px] mx-auto rounded-[100%] mt-4"></li>
+    <li class="break-words font-['Inter'] font-[var(--text-lg-semibold-font-weight,600)] text-[13px] leading-[var(--text-lg-semibold-line-height,1.556)] text-[var(--gray-900,#101828)]">Rudi Susanto</li>
+    <li class="m-[0_6.4px_0_6.4px] break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--brand-700,#6941C6)]">Founder &amp; CEO</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[11px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Former co-founder of Opendoor.<br> Early staff at Spotify and Clearbit.</li>
+    <li class="mt-3 mx-auto flex justify-center items-center ">
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector78_x2.svg" />
+      <img class="w-[20px] h-[16.3px] mr-2" src="../assets/vectors/vector77_x2.svg" />
+      <img class="w-[20px] h-[16.3px] " src="../assets/vectors/vector95_x2.svg" />
+    </li>
+  </ul>
+</div>
+</div>
+</section>
+<!-- mentor menu end -->
+
+
+<!-- fasilitas menu -->
+<section id="Fasilitas">
+<div class=" mt-20 p-3  grid grid-cols-2 gap-3 bg-[var(--gray-50,#F9FAFB)] md:grid-3 px-5" >
+
+<div class="h-15    col-span-2 md:col-span-3">
+  <ul class="text-center">
+    <li class="break-words font-['Inter'] font-[var(--display-md-semibold-font-weight,600)] text-[30px] tracking-[var(--display-md-semibold-letter-spacing,-0.7px)] leading-[var(--display-md-semibold-line-height,1.222)] text-[var(--gray-900,#101828)]">Fasilitas</li>
+    <li class="break-words font-['Inter'] font-[var(--text-xl-regular-font-weight,400)] text-[13px] leading-[var(--text-xl-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Pengalaman Bootcamp Terbaik untuk Kamu!</li>
+  </ul>
+</div>
+
+<div class="h-15     ">
+  <ul class="text-center">
+    <li class=" mt-3 mb-3 mx-auto flex justify-center items-center "><img class="w-[22px] h-[18px]" src="../assets/vectors/icon54_x2.svg" /></li>
+    <li class=" m-[0_0_8px_0] inline-block break-words font-['Inter'] font-[var(--text-xl-medium-font-weight,500)] text-[16px] leading-[var(--text-xl-medium-line-height,1.5)] text-[var(--gray-900,#101828)]">Komunitas</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[12px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Kenali banyak anggota dari komunitas alumni Edspert<br> dari berbagai macam bidang studi.</li>
+  </ul>
+</div>
+
+<div class="h-15 ">
+  <ul class="text-center">
+    <li class=" mt-3 mb-3 mx-auto flex justify-center items-center "><img class="w-[22px] h-[18px]" src="../assets/vectors/icon54_x2.svg" /></li>
+    <li class=" m-[0_0_8px_0] inline-block break-words font-['Inter'] font-[var(--text-xl-medium-font-weight,500)] text-[16px] leading-[var(--text-xl-medium-line-height,1.5)] text-[var(--gray-900,#101828)]">Komunitas</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[12px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Kenali banyak anggota dari komunitas alumni Edspert<br> dari berbagai macam bidang studi.</li>
+  </ul>
+</div>
+
+<div class="h-15     ">
+  <ul class="text-center">
+    <li class=" mt-3 mb-3 mx-auto flex justify-center items-center "><img class="w-[22px] h-[18px]" src="../assets/vectors/icon54_x2.svg" /></li>
+    <li class=" m-[0_0_8px_0] inline-block break-words font-['Inter'] font-[var(--text-xl-medium-font-weight,500)] text-[16px] leading-[var(--text-xl-medium-line-height,1.5)] text-[var(--gray-900,#101828)]">Komunitas</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[12px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Kenali banyak anggota dari komunitas alumni Edspert<br> dari berbagai macam bidang studi.</li>
+  </ul>
+</div>
+
+<div class="h-15     ">
+  <ul class="text-center">
+    <li class=" mt-3 mb-3 mx-auto flex justify-center items-center "><img class="w-[22px] h-[18px]" src="../assets/vectors/icon54_x2.svg" /></li>
+    <li class=" m-[0_0_8px_0] inline-block break-words font-['Inter'] font-[var(--text-xl-medium-font-weight,500)] text-[16px] leading-[var(--text-xl-medium-line-height,1.5)] text-[var(--gray-900,#101828)]">Komunitas</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[12px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Kenali banyak anggota dari komunitas alumni Edspert<br> dari berbagai macam bidang studi.</li>
+  </ul>
+</div>
+
+<div class="h-15     ">
+  <ul class="text-center">
+    <li class=" mt-3 mb-3 mx-auto flex justify-center items-center "><img class="w-[22px] h-[18px]" src="../assets/vectors/icon54_x2.svg" /></li>
+    <li class=" m-[0_0_8px_0] inline-block break-words font-['Inter'] font-[var(--text-xl-medium-font-weight,500)] text-[16px] leading-[var(--text-xl-medium-line-height,1.5)] text-[var(--gray-900,#101828)]">Komunitas</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[12px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Kenali banyak anggota dari komunitas alumni Edspert<br> dari berbagai macam bidang studi.</li>
+  </ul>
+</div>
+
+<div class="h-15     ">
+  <ul class="text-center">
+    <li class=" mt-3 mb-3 mx-auto flex justify-center items-center "><img class="w-[22px] h-[18px]" src="../assets/vectors/icon54_x2.svg" /></li>
+    <li class=" m-[0_0_8px_0] inline-block break-words font-['Inter'] font-[var(--text-xl-medium-font-weight,500)] text-[16px] leading-[var(--text-xl-medium-line-height,1.5)] text-[var(--gray-900,#101828)]">Komunitas</li>
+    <li class="text-center break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[12px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Kenali banyak anggota dari komunitas alumni Edspert<br> dari berbagai macam bidang studi.</li>
+  </ul>
+</div>
+
+</div>
+</section>
+<!-- fasilitas menu end-->
+
+
+<!-- Menu Materi -->
+<section id="Materi">
+<div class=" mt-20 p-3  grid grid-cols-1 gap-4 px-5">
+<div class="h-15    ">
+  <ul class="text-center">
+    <li class="break-words font-['Inter'] font-[var(--display-md-semibold-font-weight,600)] text-[30px] tracking-[var(--display-md-semibold-letter-spacing,-0.7px)] leading-[var(--display-md-semibold-line-height,1.222)] text-[var(--gray-900,#101828)]">Materi</li>
+  </ul>
+</div>
+<div class="h-15    border rounded-lg px-2 py-2">
+  <ul>
+    <li class="m-[0_0_8px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-lg-medium-font-weight,500)] text-[15px] leading-[var(--text-lg-medium-line-height,1.556)] text-[var(--gray-900,#101828)]">Introduction to Web Development</li>
+    <li class="self-start break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[13px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Belajar logika dan hal hal dasar untuk menyipkan kamu belajar pengembangan web</li>
+  </ul>
+</div>
+
+<div class="h-15    border rounded-lg px-2 py-2">
+  <ul>
+    <li class="m-[0_0_8px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-lg-medium-font-weight,500)] text-[15px] leading-[var(--text-lg-medium-line-height,1.556)] text-[var(--gray-900,#101828)]">Introduction to Web Development</li>
+    <li class="self-start break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[13px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Belajar logika dan hal hal dasar untuk menyipkan kamu belajar pengembangan web</li>
+  </ul>
+</div>
+
+<div class="h-15    border rounded-lg px-2 py-2">
+  <ul>
+    <li class="m-[0_0_8px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-lg-medium-font-weight,500)] text-[15px] leading-[var(--text-lg-medium-line-height,1.556)] text-[var(--gray-900,#101828)]">Introduction to Web Development</li>
+    <li class="self-start break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[13px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Belajar logika dan hal hal dasar untuk menyipkan kamu belajar pengembangan web</li>
+  </ul>
+</div>
+
+<div class="h-15    border rounded-lg px-2 py-2">
+  <ul>
+    <li class="m-[0_0_8px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-lg-medium-font-weight,500)] text-[15px] leading-[var(--text-lg-medium-line-height,1.556)] text-[var(--gray-900,#101828)]">Introduction to Web Development</li>
+    <li class="self-start break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[13px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Belajar logika dan hal hal dasar untuk menyipkan kamu belajar pengembangan web</li>
+  </ul>
+</div>
+
+</div>
+</section>
+<!-- Menu Materi  end-->
+
+<!-- Footer -->
+<footer>
+  <div class="mt-20 p-3  grid grid-cols-1 gap-3 px-5">
+<div class="col-span-2">
+  <ul>
+    <li class="m-[0_0_16px_0] inline-block self-start break-words font-['Inter'] font-[var(--display-sm-semibold-font-weight,600)] text-[30px] leading-[var(--display-sm-semibold-line-height,1.267)] text-[var(--gray-900,#101828)]">Daftar Kelas Sekarang</li>
+    <li class="break-words font-['Inter'] font-[var(--text-xl-regular-font-weight,400)] text-[20px] leading-[var(--text-xl-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Join over 10,000+ students already growing with Edspert</li>
+  </ul>
+</div>
+<div>
+  <button class="bg-[#ffff] text-black px-2 py-2 rounded-md hover:bg-[#87acec]">Hubungi CS</button>
+                <button class="bg-[#7F56D9] text-[#ffff] px-2 py-2 rounded-md hover:bg-[#87acec]">Daftar Sekarang</button>
+</div>
+</div>
+
+<hr class="mt-5">
+
+<div class="mt-20 p-3  grid grid-cols-5 gap-5 md:grid-cols-7 px-5">
+<div class="col-span-5 h-15   md:col-span-2">
+  <ul>
+    <li class="mb-3 bg-[url('../assets/images/logoEdspert1.png')] bg-[50%_50%] bg-cover bg-no-repeat w-[142px] h-[28px] "></li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[14px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Design amazing digital experiences that create more happy in the world.</li>
+  </ul>
+</div>
+<div class="h-15   w-15  ">
+  <ul>
+    <li class="m-[0_0_16px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-sm-semibold-font-weight,600)] text-[12px] leading-[var(--text-sm-semibold-line-height,1.429)] text-[var(--gray-400,#98A2B3)] ">Product</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3 ">Features</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Solutions <span class="break-words font-['Inter'] font-[var(--text-xs-medium-font-weight,500)] text-[12px] leading-[var(--text-xs-medium-line-height,1.5)] text-[var(--success-700,#027A48)]">New</span></li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Tutorials</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Pricing</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Releases</li>
+  </ul>
+</div>
+
+<div class="h-15   w-15 aspect-square ">
+  <ul>
+    <li class="m-[0_0_16px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-sm-semibold-font-weight,600)] text-[12px] leading-[var(--text-sm-semibold-line-height,1.429)] text-[var(--gray-400,#98A2B3)]">Product</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Features</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Solutions </li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Tutorials</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Pricing</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Releases</li>
+  </ul>
+</div>
+
+<div class="h-15   w-15 aspect-square ">
+  <ul>
+    <li class="m-[0_0_16px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-sm-semibold-font-weight,600)] text-[12px] leading-[var(--text-sm-semibold-line-height,1.429)] text-[var(--gray-400,#98A2B3)]">Product</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Features</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Solutions </li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Tutorials</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Pricing</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Releases</li>
+  </ul>
+</div>
+
+<div class="h-15   w-15 aspect-square ">
+  <ul>
+    <li class="m-[0_0_16px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-sm-semibold-font-weight,600)] text-[12px] leading-[var(--text-sm-semibold-line-height,1.429)] text-[var(--gray-400,#98A2B3)]">Product</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Features</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Solutions </li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Tutorials</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Pricing</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Releases</li>
+  </ul>
+</div>
+
+<div class="h-15   w-15 aspect-square ">
+  <ul>
+    <li class="m-[0_0_16px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-sm-semibold-font-weight,600)] text-[12px] leading-[var(--text-sm-semibold-line-height,1.429)] text-[var(--gray-400,#98A2B3)]">Product</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Features</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Solutions </li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Tutorials</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Pricing</li>
+    <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Releases</li>
+  </ul>
+</div>
+</div>
+
+<hr class="mt-5">
+
+<div class="mt-20 p-3  grid grid-cols-3 gap-4">
+<div class="m-[0_12px_0_0] w-[940px] break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[10px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-400,#98A2B3)] md:text-[16px]">© 2077 Untitled UI. All rights reserved.</div>
+<div>
+ 
+</div>
+<div class="flex flex-row justify-between w-[264px] box-sizing-border">
+  <div class="flex flex-row gap-[0_24px] w-[168px] box-sizing-border">
+    <div class="m-[2.2px_0_2.2px_0] flex flex-row justify-center w-[24px] h-[19.5px] box-sizing-border">
+      <img class="w-[24px] h-[19.5px]" src="../assets/vectors/vector2_x2.svg" />
+    </div>
+    <div class="flex flex-row justify-center w-[24px] h-[24px] box-sizing-border">
+      <img class="w-[24px] h-[24px]" src="../assets/vectors/vector_x2.svg" />
+    </div>
+    <div class="m-[0_0_0.1px_0] flex flex-row justify-center w-[24px] h-[23.9px] box-sizing-border">
+      <img class="w-[24px] h-[23.9px]" src="../assets/vectors/vector1_x2.svg" />
+    </div>
+    <div class="m-[0_0_0.6px_0] flex flex-row justify-center w-[24px] h-[23.4px] box-sizing-border">
+      <img class="w-[24px] h-[23.4px]" src="../assets/vectors/icon58_x2.svg" />
+    </div>
+  </div>
+  <div class="flex flex-row justify-center w-[16.7px] h-[24px] box-sizing-border">
+    <img class="w-[16.7px] h-[24px]" src="../assets/vectors/vector122_x2.svg" />
+  </div>
+  <div class="flex flex-row justify-center w-[24px] h-[24px] box-sizing-border">
+    <img class="w-[24px] h-[24px]" src="../assets/vectors/vector53_x2.svg" />
+  </div>
+</div>
+</div>
+
+</div>
+
+</footer>
+<!-- Footer end -->
+
+<!-- main menu end -->
+
+
+<script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+
+</body>
+</html>
+

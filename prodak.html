@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Style/style.css">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title></title> 
+    </head>
+    <body class="font-[Poppins] bg-gradient-to-t from-[] to-[] h-screen">
+    
+
+<!-- Header Star -->
+<header class="bg-white h-[80px] shadow-md " >
+    <nav class="flex justify-between items-center w-[92%] mx-5">
+      <li class="flex flex-row justify-center w-[142px] h-[28px] box-sizing-border">
+        <div class=" bg-[url('../assets/images/logoEdspert1.png')] bg-[50%_50%] bg-cover bg-no-repeat w-[142px] h-[28px] mt-2"></div> 
+        </li>
+        <div
+            class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] ml-12 top-[-100%] md:w-auto w-full flex items-center px-5 mt-3">
+            <ul class="flex md:flex-row flex-col md:items-center  md:gap-[4vw] gap-8 ">
+                <li>
+                    <a class="hover:text-gray-500 " href="../View/index.html">Home</a>
+                </li>
+                <li>
+                <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Product</a>
+        <div class="dropdown-menu bg-light m-0">
+          <a href="../View/index.html" class="dropdown-item">Fasilitas</a>
+          <a href="../View/index.html" class="dropdown-item">Mentor</a>
+          <a href="#" class="dropdown-item">-</a>
+          <a href="#" class="dropdown-item">-</a>
+                </li>
+                <li>
+                <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resource</a>
+        <div class="dropdown-menu bg-light m-0">
+          <a href="../View/index.html" class="dropdown-item">Materi</a>
+          <a href="#" class="dropdown-item">-</a>
+          <a href="#" class="dropdown-item">-</a>
+          <a href="#" class="dropdown-item">-</a>
+                </li>
+                <li>
+                    <a class="hover:text-gray-500 " href="../dist/index.html">Pricing</a>
+                </li>
+            </ul>
+        </div>
+
+
+        
+        <div class="flex items-center gap-6  mt-4 ">
+            <button class="bg-[#ffff] text-black px-5 py-2 rounded-full hover:bg-[#87acec]">Login</button>
+            <button class="bg-[#7F56D9] text-[#ffff] px-5 py-2 rounded-full hover:bg-[#87acec] text-[#ffff]">Signin</button>
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+</header>
+<!-- Header End  -->
+
+<!-- text upper -->
+<div class=" mt-20 p-3  grid grid-cols-1 gap-4">
+<div class="break-words font-['Inter'] font-[var(--text-sm-medium-font-weight,500)] text-[14px] leading-[var(--text-sm-medium-line-height,1.429)] text-[var(--brand-700,#6941C6)] text-center">
+    Intensive Bootcamp
+</div>
+<div class="break-words font-['Inter'] font-[var(--display-lg-semibold-font-weight,600)] text-[48px] tracking-[var(--display-lg-semibold-letter-spacing,-1px)] leading-[var(--display-lg-semibold-line-height,1.25)] text-[var(--brand-900,#42307D)] text-center">
+    Upskill Your Talent!
+</div>
+<div class="m-[0_16.5px_0_16.5px] break-words font-['Inter'] font-[var(--text-xl-regular-font-weight,400)] text-[20px] leading-[var(--text-xl-regular-line-height,1.5)] text-[var(--brand-700,#6941C6)] text-center">
+    Kembangkan potensimu bersama Edspert
+</div>
+
+<div class="mt-3 mx-auto flex justify-center items-center ">
+<div class="flex flex-row justify-center w-[320px] box-sizing-border">
+    <div class="shadow-[var(--shadowxs,5px_5px_5px_5px_rgba(16,24,40,0.05))] rounded-[8px] border-[1px_solid_var(--gray-300,#D0D5DD)] bg-[var(--white,#FFFFFF)] flex flex-row p-[11px_0_11px_17.5px] w-[320px] box-sizing-border">
+      <div class="m-[4.5px_10.5px_4.5px_0] flex flex-row justify-center w-[15px] h-[15px] box-sizing-border ">
+        <img class="w-[15px] h-[15px]" src="../assets/vectors/icon3_x2.svg" />
+      </div>
+      <span class="break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[16px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">
+      Search
+      </span>
+    </div>
+  </div>
+</div>
+<img class="w-[1440px] h-[96px]" src="../assets/vectors/backgroundPattern_x2.svg" />
+</div>
+<!-- text upper End -->
+
+
+<div class=" mt-20 p-3  grid grid-cols-3 gap-4">
+
+<div>
+    <div class="container">
+        <div id="productList" class="row">
+            <!-- product list here -->
+        </div>
+        </div>
+</div>
+<div>
+    <div class="container">
+        <div id="productses" class="row">
+            <!-- product list here -->
+        </div>
+        </div>
+</div>
+
+<div>
+    <div class="container">
+        <div id="product1" class="row">
+            <!-- product list here -->
+        </div>
+        </div>
+</div>
+<div>
+    <div class="container">
+        <div id="product2" class="row">
+            <!-- product list here -->
+        </div>
+        </div>
+</div>
+<div>
+    <div class="container">
+        <div id="product3" class="row">
+            <!-- product list here -->
+        </div>
+        </div>
+</div>
+<div>
+    <div class="container">
+        <div id="product4" class="row">
+            <!-- product list here -->
+        </div>
+        </div>
+</div>
+
+</div>
+
+<div class="mt-3 mx-auto flex justify-center items-center">
+    <ul class="pagination">
+        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+</div>
+
+
+    
+
+<!-- Footer -->
+<footer>
+    <div class="mt-20 p-3  grid grid-cols-1 gap-3 px-5">
+  <div class="col-span-2">
+    <ul>
+      <li class="m-[0_0_16px_0] inline-block self-start break-words font-['Inter'] font-[var(--display-sm-semibold-font-weight,600)] text-[30px] leading-[var(--display-sm-semibold-line-height,1.267)] text-[var(--gray-900,#101828)]">Daftar Kelas Sekarang</li>
+      <li class="break-words font-['Inter'] font-[var(--text-xl-regular-font-weight,400)] text-[20px] leading-[var(--text-xl-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Join over 10,000+ students already growing with Edspert</li>
+    </ul>
+  </div>
+  <div>
+    <button class="bg-[#ffff] text-black px-2 py-2 rounded-md hover:bg-[#87acec]">Hubungi CS</button>
+                  <button class="bg-[#7F56D9] text-[#ffff] px-2 py-2 rounded-md hover:bg-[#87acec]">Daftar Sekarang</button>
+  </div>
+  </div>
+  
+  <hr class="mt-5">
+  
+  <div class="mt-20 p-3  grid grid-cols-5 gap-5 md:grid-cols-7 px-5">
+  <div class="col-span-5 h-15   md:col-span-2">
+    <ul>
+      <li class="mb-3 bg-[url('../assets/images/logoEdspert1.png')] bg-[50%_50%] bg-cover bg-no-repeat w-[142px] h-[28px] "></li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[14px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-500,#667085)]">Design amazing digital experiences that create more happy in the world.</li>
+    </ul>
+  </div>
+  <div class="h-15   w-15  ">
+    <ul>
+      <li class="m-[0_0_16px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-sm-semibold-font-weight,600)] text-[12px] leading-[var(--text-sm-semibold-line-height,1.429)] text-[var(--gray-400,#98A2B3)] ">Product</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3 ">Features</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Solutions <span class="break-words font-['Inter'] font-[var(--text-xs-medium-font-weight,500)] text-[12px] leading-[var(--text-xs-medium-line-height,1.5)] text-[var(--success-700,#027A48)]">New</span></li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Tutorials</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Pricing</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Releases</li>
+    </ul>
+  </div>
+  
+  <div class="h-15   w-15 aspect-square ">
+    <ul>
+      <li class="m-[0_0_16px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-sm-semibold-font-weight,600)] text-[12px] leading-[var(--text-sm-semibold-line-height,1.429)] text-[var(--gray-400,#98A2B3)]">Product</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Features</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Solutions </li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Tutorials</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Pricing</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Releases</li>
+    </ul>
+  </div>
+  
+  <div class="h-15   w-15 aspect-square ">
+    <ul>
+      <li class="m-[0_0_16px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-sm-semibold-font-weight,600)] text-[12px] leading-[var(--text-sm-semibold-line-height,1.429)] text-[var(--gray-400,#98A2B3)]">Product</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Features</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Solutions </li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Tutorials</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Pricing</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Releases</li>
+    </ul>
+  </div>
+  
+  <div class="h-15   w-15 aspect-square ">
+    <ul>
+      <li class="m-[0_0_16px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-sm-semibold-font-weight,600)] text-[12px] leading-[var(--text-sm-semibold-line-height,1.429)] text-[var(--gray-400,#98A2B3)]">Product</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Features</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Solutions </li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Tutorials</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Pricing</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Releases</li>
+    </ul>
+  </div>
+  
+  <div class="h-15   w-15 aspect-square ">
+    <ul>
+      <li class="m-[0_0_16px_0] inline-block self-start break-words font-['Inter'] font-[var(--text-sm-semibold-font-weight,600)] text-[12px] leading-[var(--text-sm-semibold-line-height,1.429)] text-[var(--gray-400,#98A2B3)]">Product</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Features</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Solutions </li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Tutorials</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Pricing</li>
+      <li class="break-words font-['Inter'] font-[var(--text-md-semibold-font-weight,600)] text-[13px] leading-[var(--text-md-semibold-line-height,1.5)] text-[var(--gray-500,#667085)] md: mb-3">Releases</li>
+    </ul>
+  </div>
+  </div>
+  
+  <hr class="mt-5">
+  
+  <div class="mt-20 p-3  grid grid-cols-3 gap-4">
+  <div class="m-[0_12px_0_0] w-[940px] break-words font-['Inter'] font-[var(--text-md-regular-font-weight,400)] text-[10px] leading-[var(--text-md-regular-line-height,1.5)] text-[var(--gray-400,#98A2B3)] md:text-[16px]">© 2077 Untitled UI. All rights reserved.</div>
+  <div>
+   
+  </div>
+  <div class="flex flex-row justify-between w-[264px] box-sizing-border">
+    <div class="flex flex-row gap-[0_24px] w-[168px] box-sizing-border">
+      <div class="m-[2.2px_0_2.2px_0] flex flex-row justify-center w-[24px] h-[19.5px] box-sizing-border">
+        <img class="w-[24px] h-[19.5px]" src="../assets/vectors/vector2_x2.svg" />
+      </div>
+      <div class="flex flex-row justify-center w-[24px] h-[24px] box-sizing-border">
+        <img class="w-[24px] h-[24px]" src="../assets/vectors/vector_x2.svg" />
+      </div>
+      <div class="m-[0_0_0.1px_0] flex flex-row justify-center w-[24px] h-[23.9px] box-sizing-border">
+        <img class="w-[24px] h-[23.9px]" src="../assets/vectors/vector1_x2.svg" />
+      </div>
+      <div class="m-[0_0_0.6px_0] flex flex-row justify-center w-[24px] h-[23.4px] box-sizing-border">
+        <img class="w-[24px] h-[23.4px]" src="../assets/vectors/icon58_x2.svg" />
+      </div>
+    </div>
+    <div class="flex flex-row justify-center w-[16.7px] h-[24px] box-sizing-border">
+      <img class="w-[16.7px] h-[24px]" src="../assets/vectors/vector122_x2.svg" />
+    </div>
+    <div class="flex flex-row justify-center w-[24px] h-[24px] box-sizing-border">
+      <img class="w-[24px] h-[24px]" src="../assets/vectors/vector53_x2.svg" />
+    </div>
+  </div>
+  </div>
+  
+  </div>
+  
+  </footer>
+  <!-- Footer end -->
+
+
+    </body>
+    </html>
+
+
+
+
+
+    
